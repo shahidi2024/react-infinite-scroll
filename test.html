@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: lightgray;
+            margin: 1500px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="box" class="box"></div>
+    <script>
+        const observer = new IntersectionObserver( entries => {
+            const boxEle = entries[0];
+            const isIntersecting = boxEle.isIntersecting;
+            boxEle.target.style.backgroundColor = isIntersecting ? 'blue' : 'red'
+        },{
+            threshold : 1
+        });
+        observer.observe(document.getElementById('box'));
+    </script>
+</body>
+</html>
