@@ -53,7 +53,10 @@ export default {
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
   			}
-  		}
+  		},
+		  fontFamily: {
+			iransans: ['IranSans', 'sans-serif'], // Add your custom font
+		},
   	}
   },
   plugins: [require("tailwindcss-animate")],

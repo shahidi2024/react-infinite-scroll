@@ -1,0 +1,8 @@
+/* src/fonts.css */
+@font-face {
+    font-family: 'IranSans';
+    src: url('./assets/iransansdn.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
